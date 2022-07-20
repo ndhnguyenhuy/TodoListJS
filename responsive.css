@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+  .center {
+    flex-direction: column;
+    left: 0;
+  }
+  #input {
+    max-width: 300px;
+  }
+  .todo-container {
+    left: 10px;
+    width: 100%;
+    top: 72%;
+  }
+  .add {
+    margin: 12px 0;
+  }
+}
