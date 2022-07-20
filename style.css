@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("https://thuthuatnhanh.com/wp-content/uploads/2019/08/anh-nen-3d-thien-nhien.jpg")
+    no-repeat center;
+}
+.header {
+  position: relative;
+  top: 30%;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+}
+.center {
+  position: absolute;
+  top: 45%;
+  left: 38%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#input {
+  outline: none;
+  border: none;
+  padding: 12px 8px;
+  width: 300px;
+  font-size: 14px;
+}
+.add {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  padding: 11px 16px;
+}
+.add:hover {
+  background-color: #ff8533;
+}
+.add:hover .icon {
+  color: #fff;
+}
+.icon {
+  color: #ff8533;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+.todo-container {
+  position: absolute;
+  top: 55%;
+  left: 39%;
+}
+.todo-list {
+  width: 355px;
+  list-style: none;
+}
+.todo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.todo-item {
+  flex: 1;
+  background-color: #ffc988;
+  margin: 4px 0;
+  padding: 10px 6px;
+}
+.check-btn {
+  background-color: rgba(111, 231, 64, 0.8);
+  border: none;
+  outline: none;
+  margin: 0 4px;
+  font-size: 16px;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+
+.check-btn i {
+  color: #fff;
+  font-size: 10px;
+}
+.delete-btn {
+  background-color: rgba(197, 58, 15, 0.904);
+  border: none;
+  outline: none;
+  margin: 0 4px;
+  font-size: 16px;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+.delete-btn i {
+  color: #fff;
+  font-size: 10px;
+}
+.check {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.down {
+  transform: translateY(100px) rotateZ(25deg);
+  opacity: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+.select {
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+}
+select {
+  color: #eb661a;
+  width: 100px;
+  cursor: pointer;
+  padding: 12px 8px;
+}
+.select::after {
+  content: "\25bc";
+  position: absolute;
+  background: #ff8533;
+  color: #fff;
+  top: 0;
+  right: 0;
+  padding: 12px 8px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.select:hover::after {
+  background-color: #fff;
+  color: #ff8533;
+}

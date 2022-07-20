@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">TodoList</h1>
+      <div class="center">
+        <input id="input" type="text" placeholder="Nhập điều bạn muốn làm..." />
+        <button class="add"><i class="icon fa-solid fa-plus"></i></button>
+
+        <div class="select">
+          <select name="todos" class="filter-todo">
+            <option value="all">All</option>
+            <option value="complete">Complete</option>
+            <option value="uncomplete">Uncomplete</option>
+          </select>
+        </div>
+      </div>
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
+        <!-- <div class="todo">
+          <li class="todo-item"></li>
+          <button class="check-btn"></button>
+          <button class="delete-btn"></button>
+        </div> -->
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
